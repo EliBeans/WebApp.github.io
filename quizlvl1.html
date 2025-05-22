@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quizlvl1.css">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+</head>
+<body>
+    <p id="questionlvl1"></p>
+<div class="button-grid">
+    <button id="option1lvl1"></button>
+    <button id="option2lvl1"></button>
+    <button id="option3lvl1"></button>
+    <button id="option4lvl1"></button>
+
+</div>
+<div id="timerlvl1">Time left: 20s</div>
+
+<p id="scorelvl1"></p>
+
+<div id="lottie-animationlvl1" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 120vh;
+    pointer-events: none;
+    z-index: 1;
+    display: none;
+"></div>
+<div id="lottie-animation-wronglvl1" style="
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+pointer-events: none;
+z-index: 3;
+display: none;
+"></div>
+
+
+<button id="backHome" style="display: none; font-size: 2rem; padding: 1rem 2rem;" onclick="location.href='homePage.html'">
+    Back to Home
+</button>
+
+<script src="quizlvl1.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.background-split {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    z-index: -2;
+}
+h1 {
+    display: block;
+    font-size: 5em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    margin-left: -10px;
+}
+
+.left-part {
+    width: 30%;
+    background-color: #69c1db;
+}
+
+.right-part {
+    width: 70%;
+    background-color: #0f8bf1;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.left-content, .right-content {
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.left-content {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: -250px;
+}
+
+.right-content {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-column {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1200px;
+    gap: 1.5rem;
+}
+
+.button-column button {
+    font-size: 1.5rem;
+    padding: 3.5rem;
+    background-color: #fff;
+    border: 4px solid #333;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+}
+
+.button-column button:hover {
+    background-color: #ddd;
+}
+
+#lastScoreText, #lastScoreTextlvl1, #lastScoreTextlvl2 {
+    font-size: 1.5rem;
+    color: #000;
+    outline: 2px solid black;
+    padding: 0.75rem;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 983px) {
+    .left-content{
+        gap: 2rem;
+        margin-top: -250px;
+
+    }
+    .right-content{
+        margin-top: 60px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .left-content, .right-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .background-split {
+        flex-direction: column;
+    }
+
+    .left-part {
+        width: 100%;
+        height: 35%;
+    }
+    .right-part{
+        width: 100%;
+        height: 65%;
+    }
+    .left-content{
+        gap: 0.7rem;
+        margin-top: -36px;
+
+    }
+    #lastScoreText, #lastScoreTextlvl1, #lastScoreTextlvl2 {
+        font-size: 1rem;
+        color: #000;
+        outline: 2px solid black;
+        padding: 0.75rem;
+        border-radius: 5px;
+    }
+    .right-content{
+        margin-top: 66px;
+    }
+    h1 {
+        display: block;
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
+    }
+}

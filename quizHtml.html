@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quizCss.css">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
+</head>
+<body>
+    <p id="question"></p>
+<div class="button-grid">
+    <button id="option1"></button>
+    <button id="option2"></button>
+    <button id="option3"></button>
+    <button id="option4"></button>
+</div>
+
+
+<p id="score"></p>
+<div id="lottie-animation" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 120vh;
+    pointer-events: none;
+    z-index: 1;
+    display: none;
+"></div>
+<div id="lottie-animation-wrong" style="
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+pointer-events: none;
+z-index: 3;
+display: none;
+"></div>
+
+
+<button id="backHome" style="display: none; font-size: 2rem; padding: 1rem 2rem;" onclick="location.href='homePage.html'">
+    Back to Home
+</button>
+
+<script src="quizJs.js"></script>
+</body>
+</html>

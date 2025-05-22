@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homePage.css">
+    <title>Home page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+</head>
+<body>
+    <div class="background-split">
+        <div class="left-part"></div>
+        <div class="right-part"></div>
+    </div>
+
+    <div class="content">
+        <div class="left-content">
+            <h1>Home page</h1>
+            <p id="lastScoreText"></p>
+            <p id="lastScoreTextlvl1"></p>
+            <p id="lastScoreTextlvl2"></p>
+        </div>
+        <div class="right-content">
+            <div class="button-column">
+                <button onclick="location.href='quizHtml.html'">Level 0</button>
+                <button onclick="location.href='quizlvl1.html'">Level 1</button>
+                <button onclick="location.href='quizlvl2.html'">Level 2</button>
+            </div>
+        </div>
+    </div>
+    <div id="lottie-birdAnimation" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 120vh;
+    pointer-events: none;
+    z-index: -1;
+    display: none;
+"></div>
+<button id="soundToggle" style="
+position: fixed;
+bottom: 20px;
+right: 20px;
+z-index: 100;
+background-color: #fff;
+border: 2px solid #333;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+font-size: 24px;
+cursor: pointer;
+box-shadow: 0 0 10px rgba(0,0,0,0.2);
+">🎵</button>
+    
+    <button id="backHome" style="display: none; font-size: 2rem; padding: 1rem 2rem;" onclick="location.href='index.html'">
+        Back to Home
+    </button>
+<script src="homePage.js"></script>
+</body>
+</html>
